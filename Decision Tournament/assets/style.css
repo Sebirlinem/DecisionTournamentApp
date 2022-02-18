@@ -30,6 +30,11 @@ input {
 	margin: 10px 20px 10px 0;
 }
 
+@font-face {
+	font-family: 'Prince Valiant';
+	src: url('Decision Tournament/assets/PrinceValiant.ttf');
+}
+
 .entrantList {
 	margin: 0;
 }
