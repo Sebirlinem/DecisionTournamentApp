@@ -1,4 +1,0 @@
-<link rel="stylesheet" href="../assets/bootstrap.min.css">
-
-<script src="../assets/popper.min.js"></script>
-<script src="../assets/bootstrap.min.js"></script>
