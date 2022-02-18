@@ -1,0 +1,63 @@
+html {
+	background-image: url('wood.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+body {
+	background-image: url('scroll.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: transparent;
+}
+
+#head {
+	padding-top: 12%;
+}
+
+h1 {
+	font-size: 10vw;
+	opacity: 70%;
+}
+
+p {
+	font-size: 3vmin;
+	padding: 0 10% 0 10%;
+}
+
+input {
+	font-size: 3vmin;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+button {
+	border-width: 0;
+	background-color: rgba(255, 255, 255, 0);
+	font-size: 4vw;
+}
+
+#theme {
+	background-image: url('view2.png');
+	background-color: rgba(0,0,0,0);
+	opacity: 50%;
+}
+
+#entrants {
+	height: 33vh;
+	width: 80%;
+	margin: 20px auto 0 auto;
+	overflow-y: scroll;
+}
+
+#progress {
+	height: 40vh;
+	width: 80%;
+	min-height: 0;
+	overflow-y: scroll;
+	margin-bottom: 8px;
+	border-width: 0;
+}
+
+#rinseRepeat {
+	margin-top: 0;
+}
