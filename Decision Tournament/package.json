@@ -1,0 +1,28 @@
+{
+	"version": "0.1.2",
+	"name": "decisiontournament",
+	"app-name": "Decision Tournament",
+	"package-name": "decisiontournament",
+	"project-type": "webview",
+	"icon": "./assets/icon/icon.png",
+	"dist-path": "./dist",
+	"permission": [
+			"android.permission.INTERNET"
+	],
+	"description": "Medieval tournament decision maker.",
+	"main": "main.js",
+	"scripts": {
+			"start:dev": "node .",
+			"build": "androidjs build"
+	},
+	"author": "Seb",
+	"license": "ISC",
+	"dependencies": {
+			"androidjs": "^2.0.2"
+	},
+	"project-name": "Decision Tournament",
+	"theme": {
+			"fullScreen": true
+	},
+	"screenOrientation": "portrait"
+}

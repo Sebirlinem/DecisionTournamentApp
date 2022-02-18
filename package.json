@@ -1,0 +1,11 @@
+{
+  "name": "decisiontournament",
+  "version": "0.1.0",
+  "description": "Medieval tournament decision maker",
+  "main": "index.js",
+  "author": "Seb",
+  "license": "ISC",
+  "dependencies": {
+    "androidjs": "^2.0.4"
+  }
+}

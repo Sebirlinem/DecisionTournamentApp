@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Decision Tournament</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href='../assets/style.css' rel='stylesheet' type='text/css'>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="../node_modules/androidjs/lib/androidjs.js"></script>
+</head>
+
+<body>
+	<div id="head">
+		<h1>Decision Tournament</h1>
+	</div>
+	<div id="entries">
+		<p>Enter your list of options and watch them fight to the death to decide the ultimate victor.</p>
+
+		<div id="entrants">
+			<div id="row_0" class="entrantList">
+				<input type="text" name="combatant_0" id="combatant_0">
+				<button id="remove_0" class="mod">x</button>
+			</div>
+			<div id="row_1" class="entrantList">
+				<input type="text" name="combatant_1" id="combatant_1">
+				<button id="remove_1" class="mod">x</button>
+			</div>
+			<div id="row_2" class="entrantList">
+				<input type="text" name="combatant_2" id="combatant_2">
+				<button id="remove_2" class="mod">x</button>
+			</div>
+		</div>
+		<button id="addNew">+</button>
+		<br>
+		<button id="layOn">Fight!</button>
+	</div>
+	<div id="herald" style="display: none;">
+		<h2 id="status" style="color: white;">Status:</h2>
+		<div id="progress"></div>
+		<button id="rinseRepeat">New Tournament</button>
+	</div>
+
+<script src="../assets/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src = "../assets/script.js"></script>
+<script type="text/javascript">
+	function toggle_popover() {
+		$('#popover').popover('toggle')
+	}
+</script>
+</body>
+
+</html>
