@@ -10,9 +10,11 @@ html {
 
 body {
 	width: 100%;
+	max-width: 900px;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	background-color: rgb(240, 240, 240);
+	margin: 0 auto 0 auto;
 }
 
 h1 {
