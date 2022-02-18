@@ -1,6 +1,6 @@
 **/logs
 *.log
-Descision Tournament/archive/
+Descision Tournament/dist/archive/
 archive code.txt
 build.bat
 ProjectPlan.txt
