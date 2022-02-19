@@ -1,0 +1,11 @@
+body {
+	background-color: rgb(240, 240, 240);
+}
+
+input {
+	background-color: rgb(255, 255, 255);
+}
+
+#theme {
+	background-color: rgba(0,0,0,0);
+}

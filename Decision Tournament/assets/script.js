@@ -9,6 +9,7 @@ front.on("hello from back", function(msg){
 $(document).ready(function() {
 	//console.log('Ready');
 
+	// sleep function for generating suspense
 	function goTheFuckToSleep(Jeff) {
 		const up = Date.now();
 		let wake = null;
@@ -22,6 +23,33 @@ $(document).ready(function() {
 	And call with
 	await sleep(timeInMs);*/
 
+	// theme control
+	const medievalTheme = 'file:///E:/Web%20Dev/DecisionTournamentApp/Decision%20Tournament/assets/medieval.css';
+	const lightTheme = 'file:///E:/Web%20Dev/DecisionTournamentApp/Decision%20Tournament/assets/light.css';
+	const darkTheme = 'file:///E:/Web%20Dev/DecisionTournamentApp/Decision%20Tournament/assets/dark.css';
+	var cssState = '';
+
+	$('#theme').on('click touch', function() {
+		cssState = document.getElementById('theme_css').href;
+		//console.log('theme change');
+
+		switch (cssState) {
+			case medievalTheme:
+				document.getElementById('theme_css').href = lightTheme;
+				//console.log('light theme');
+				break;
+			case lightTheme:
+				document.getElementById('theme_css').href = darkTheme;
+				//console.log('dark theme');
+				break;
+			case darkTheme:
+				document.getElementById('theme_css').href = medievalTheme;
+				//console.log('medieval theme');
+				break;
+		};
+	})
+
+	// detect and delete selected entrant row
 	var dumpTruck = function() {
 		var row = this.id;
 		var rowCount = row.split('_')[1];
@@ -34,6 +62,7 @@ $(document).ready(function() {
 
 	var listLength = 3;
 
+	// add a new entrant row
 	$('#addNew').on('click touch', function() {
 		var node1 = '';
 		var node2 = '';
@@ -119,7 +148,9 @@ $(document).ready(function() {
 		//console.log('entrant list:');
 		for (b = 0; b < listb.length; b++) {
 			var bigBang = listb[b].value;
-			list.push(bigBang);
+			if (bigBang.length > 0) {
+				list.push(bigBang);
+			};
 		};
 
 		// check there are combatants then add them to the pool
@@ -132,7 +163,7 @@ $(document).ready(function() {
 			if (pool1.length > 1) {
 				shout(pool1.length + " combatants registered, beginning tournament...");
 			} else {
-				shout("only " + pool1.length + " combatant registered, default win");
+				shout("Only " + pool1.length + " combatant registered...");
 			};
 		} else {
 			shout(pool1.length + " combatants registered...");

@@ -6,19 +6,18 @@ html {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	margin: 0 auto 0 auto;
 }
 
 body {
 	width: 100%;
-	max-width: 900px;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	background-color: rgb(240, 240, 240);
 	margin: 0 auto 0 auto;
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 10vmin;
 	text-align: center;
 	font-family: 'Prince Valiant';
 	margin-bottom: 20px;
@@ -28,17 +27,25 @@ h2 {
 	font-size: 1.2em;
 }
 
+p {
+	font-size: 3vmin;
+}
+
 div {
 	text-align: center;
 	margin-top: 20px;
 }
 
 input {
+	font-size: 3vmin;
 	width: 50%;
 	max-width: 636px;
 	margin: 10px 20px 10px 0;
 	border-width: 0;
-	background-color: rgb(255, 255, 255);
+}
+
+button {
+	font-size: 4vmin;
 }
 
 *:focus {
@@ -57,13 +64,16 @@ input {
 	position: static;
 }
 
+#menu img, #datBase img {
+	display: none;
+}
+
 #theme {
 	height: 30px;
 	width: 30px;
 	border-width: 0;
 	background-image: url('view.png');
 	background-size: contain;
-	background-color: rgba(0,0,0,0);
 	padding: 0;
 }
 
@@ -81,7 +91,7 @@ input {
 
 #layOn, #rinseRepeat {
 	font-family: 'Prince Valiant';
-	font-size: 1.5em;
+	font-size: 6vw;
 	padding: 5px 10px 5px 10px;
 	margin: 20px 0 20px 0;
 }
@@ -100,4 +110,24 @@ input {
 #progress p {
 	margin: 0;
 	padding: 0;
+}
+
+@media screen and (min-width: 575px) {
+
+	body {
+		max-width: 575px;
+	}
+
+	h1 {
+		font-size: 3.5em;
+	}
+
+	p, input {
+		font-size: 1em;
+	}
+
+	button, #layOn, #rinseRepeat {
+		font-size: 2em;
+	}
+
 }
