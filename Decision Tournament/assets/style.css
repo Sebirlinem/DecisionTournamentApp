@@ -68,6 +68,19 @@ button {
 	display: none;
 }
 
+#debug_log {
+	text-align: left;
+	max-height: 80px;
+	overflow-y: scroll;
+	display: none;
+}
+
+#debug_log p {
+	margin: 0;
+	font-size: 0.5em;
+	color: red;
+}
+
 #theme {
 	height: 30px;
 	width: 30px;

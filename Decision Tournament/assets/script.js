@@ -9,6 +9,13 @@ front.on("hello from back", function(msg){
 $(document).ready(function() {
 	//console.log('Ready');
 
+	// get the location of this javascript file
+	var jsFileLocation = $('script[src*=script]').attr('src');  // the js file path
+	jsFileLocation = jsFileLocation.replace('script.js', '');   // the js folder path
+
+	var windowLocation = window.location.href; // the page file path
+	windowLocation = windowLocation.replace('views/index.html', 'assets/'); // the assets file path
+
 	// sleep function for generating suspense
 	function goTheFuckToSleep(Jeff) {
 		const up = Date.now();
@@ -23,28 +30,40 @@ $(document).ready(function() {
 	And call with
 	await sleep(timeInMs);*/
 
+	// update the debug log
+	function scream(update) {
+		var node = document.createElement('p');
+		var textnode = document.createTextNode(update);
+		node.appendChild(textnode);
+		document.getElementById('debug_log').appendChild(node);
+	}
+
 	// theme control
-	const medievalTheme = 'file:///E:/Web%20Dev/DecisionTournamentApp/Decision%20Tournament/assets/medieval.css';
-	const lightTheme = 'file:///E:/Web%20Dev/DecisionTournamentApp/Decision%20Tournament/assets/light.css';
-	const darkTheme = 'file:///E:/Web%20Dev/DecisionTournamentApp/Decision%20Tournament/assets/dark.css';
+	const medievalTheme = windowLocation + 'medieval.css';
+	const lightTheme = windowLocation + 'light.css';
+	const darkTheme = windowLocation + 'dark.css';
 	var cssState = '';
 
 	$('#theme').on('click touch', function() {
 		cssState = document.getElementById('theme_css').href;
 		//console.log('theme change');
+		//scream('Dark theme location: ' + darkTheme);
 
 		switch (cssState) {
 			case medievalTheme:
 				document.getElementById('theme_css').href = lightTheme;
 				//console.log('light theme');
+				scream('Light theme success!');
 				break;
 			case lightTheme:
 				document.getElementById('theme_css').href = darkTheme;
 				//console.log('dark theme');
+				scream('Dark theme success!');
 				break;
 			case darkTheme:
 				document.getElementById('theme_css').href = medievalTheme;
 				//console.log('medieval theme');
+				scream('Medieval theme success!');
 				break;
 		};
 	})

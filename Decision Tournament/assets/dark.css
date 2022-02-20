@@ -10,6 +10,10 @@ h1, p, input, button {
 	color: rgb(100,100,100);
 }
 
+p, input {
+	font-weight: 700;
+}
+
 #theme {
 	background-image: url('view2.png');
 	background-color: rgba(0,0,0,0);
