@@ -4,3 +4,9 @@ Descision Tournament/dist/archive/
 archive code.txt
 build.bat
 ProjectPlan.txt
+Descision Tournament/assets/icon/icon.psd
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

@@ -31,6 +31,11 @@ p {
 	font-size: 3vmin;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 div {
 	text-align: center;
 	margin-top: 20px;
@@ -58,8 +63,8 @@ button {
 }
 
 #menu {
-	text-align: left;
-	padding-left: 5px;
+	text-align: center;
+	padding: 30px 0 0 0;
 	margin: 0;
 	position: static;
 }
@@ -88,6 +93,86 @@ button {
 	background-image: url('view.png');
 	background-size: contain;
 	padding: 0;
+}
+
+#links {
+	height: 30px;
+	width: 30px;
+	border-width: 0;
+	background-image: url('link.png');
+	background-size: contain;
+	padding: 0;
+}
+
+#info {
+	height: 30px;
+	width: 30px;
+	border-width: 0;
+	background-image: url('info.png');
+	background-size: contain;
+	padding: 0;
+	margin: 0 10vmin 0 10vmin;
+}
+
+#unPop {
+	height: 30px;
+	width: 30px;
+	border-width: 0;
+	padding: 0;
+}
+
+#popWrap {
+	position: fixed;
+	top: 200px;
+	z-index: 9;
+	height: 100%;
+	width: 100%;
+	max-width: 575px;
+}
+
+#popper {
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	text-align: right;
+}
+
+#popper div {
+	text-align: left;
+}
+
+#git {
+	height: 32px;
+	width: 32px;
+	border-width: 0;
+	background-image: url('Mark.png');
+	background-size: contain;
+	padding: 0;
+	margin-right: 10px;
+}
+
+#kofi {
+	height: 32px;
+	width: 32px;
+	border-width: 0;
+	background-image: url('Kofi.png');
+	background-size: contain;
+	padding: 0;
+	margin-right: 10px;
+}
+
+#linkList, #infoView {
+	font-weight: bold;
+}
+
+#linkList li a {
+	margin-bottom: 20px;
+	display:flex;
+	align-items:center;
+}
+
+.nav {
+	display: inline-block;
 }
 
 .entrantList {

@@ -68,6 +68,25 @@ $(document).ready(function() {
 		};
 	})
 
+	// popup control
+	$('#info').on('click touch', function() {
+		$('#popWrap').show();
+		$('#linkView').hide();
+		$('#infoView').show();
+	});
+
+	$('#links').on('click touch', function() {
+		$('#popWrap').show();
+		$('#infoView').hide();
+		$('#linkView').show();
+	})
+
+	$('#unPop').on('click touch', function() {
+		$('#popWrap').hide();
+		$('#infoView').hide();
+		$('#linkView').hide();
+	})
+
 	// detect and delete selected entrant row
 	var dumpTruck = function() {
 		var row = this.id;

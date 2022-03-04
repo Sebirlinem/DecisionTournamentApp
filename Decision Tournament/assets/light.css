@@ -9,3 +9,14 @@ input {
 #theme {
 	background-color: rgba(0,0,0,0);
 }
+
+#popper {
+	background-color: white;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#unPop, #git, #kofi {
+	background-color: white;
+}

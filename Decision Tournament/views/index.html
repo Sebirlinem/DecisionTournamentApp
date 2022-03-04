@@ -18,13 +18,16 @@
 
 <body>
 	<div id="menu">
-		<button id="theme"></button>
+		<button id="theme" class="nav"></button>
+		<button id="info" class="nav"></button>
+		<button id="links" class="nav"></button>
 		<img src="../assets/scrollTop.png">
 	</div>
 	<div id="middle">
 		<div id="head">
 			<h1>Decision Tournament</h1>
 		</div>
+
 		<div id="entries">
 			<p>Enter your list of options and watch them fight to the death to decide the ultimate victor.</p>
 
@@ -46,15 +49,35 @@
 			<br>
 			<button id="layOn">Fight!</button>
 		</div>
+
 		<div id="herald" style="display: none;">
 			<h2 id="status" style="color: white;">Status:</h2>
 			<div id="progress"></div>
 			<button id="rinseRepeat">New Tournament</button>
 		</div>
 	</div>
+
 	<div id="datBase">
 		<img src="../assets/scrollBottom.png">
 		<div id="debug_log"></div>
+	</div>
+
+	<div id="popWrap" style="display:none;">
+		<div id="popper">
+			<button id="unPop">X</button>
+			<div id="linkView" style="display:none;">
+				<ul id="linkList">
+					<li><a href="https://github.com/Sebirlinem/DecisionTournamentApp/issues" target="_blank"><button id="git"></button>Bugs / Feedback</a></li>
+					<li><a href="https://ko-fi.com/descisiontournament" target="_blank"><button id="kofi"></button>Support the Dev on Ko-fi</a></li>
+				</ul>
+			</div>
+			<div id="infoView" style="display:none">
+				<p>Enter each of your options in the boxes provided, one per box.</p>
+				<p>If you would like to quickly remove an option then press the X button to the right of that text box.</p>
+				<p>If you would like to add even more options press the + button at the bottom of the options list.</p>
+				<p>To begin the descision tournament press the 'Fight!' button.</p>
+			</div>
+		</div>
 	</div>
 
 <script src="../assets/jquery-3.3.1.slim.min.js"></script>

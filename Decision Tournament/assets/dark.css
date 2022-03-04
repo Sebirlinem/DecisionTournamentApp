@@ -19,3 +19,30 @@ p, input {
 	background-color: rgba(0,0,0,0);
 	opacity: 50%;
 }
+
+#links {
+	background-image: url('link2.png');
+	background-color: rgba(0,0,0,0);
+	opacity: 50%;
+}
+
+#info {
+	background-image: url('info2.png');
+	background-color: rgba(0,0,0,0);
+	opacity: 50%;
+}
+
+#git {
+	background-image: url('Mark2.png');
+}
+
+#linkList {
+	color: rgb(100,100,100);
+}
+
+#popper {
+	background-color: black;
+	border-color: rgb(55,55,55);
+	border-width: 1px;
+	border-style: solid;
+}
