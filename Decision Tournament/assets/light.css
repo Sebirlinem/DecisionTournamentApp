@@ -6,7 +6,7 @@ input {
 	background-color: rgb(255, 255, 255);
 }
 
-#theme {
+#theme, #info, #links {
 	background-color: rgba(0,0,0,0);
 }
 
